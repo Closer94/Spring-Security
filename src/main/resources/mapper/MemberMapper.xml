@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.bsm.mapper.MemberMapper">
+    <insert id="insertMember" parameterType="MemberVO">
+        INSERT INTO MEMBER(email, password, name, position, create_date)
+        VALUES(#{email}, #{password}, #{name}, #{position}, CURRENT_TIMESTAMP)
+    </insert>
+
+    <select id="loginChk"  resultType="int">
+        SELECT count(*)
+        FROM MEMBER
+        WHERE id = #{memberId}
+          AND password = #{password}
+    </select>
+
+    <update id="updatePassword" parameterType="MemberVO">
+        UPDATE MEMBER
+        SET
+            password = #{newPassword}
+        WHERE id = #{memberId}
+          AND password = #{password}
+    </update>
+
+
+</mapper>
