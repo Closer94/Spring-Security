@@ -25,12 +25,12 @@
 요청한 페이지를 보여주거나 막는다. <br/>
 - REST API URL : /myPage <br/>
 - Header : <br/>
-![image](https://user-images.githubusercontent.com/54669100/168466601-a3fa1ef5-0d18-4551-abf5-c1abdd18c553.png)
+![image](https://user-images.githubusercontent.com/54669100/168466708-a9507cae-9d83-43c1-be0a-aeeb61655c77.png)
 <br/>
 - 기능 결과 : <br/>  
 권한 있는 경우: </br>
-![image](https://user-images.githubusercontent.com/54669100/168466623-5e719d66-e33e-46df-b27c-980b82b2f78e.png)
-<br/>
+
+
 권한이 없는 경우: <br>
 ![image](https://user-images.githubusercontent.com/54669100/168466666-e31076b1-f5bc-4112-9aef-3918fd78ad37.png)
 
